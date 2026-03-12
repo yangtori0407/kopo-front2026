@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function splitPhoneNumber(){
+            const cell = document.getElementById("cellphone").value;
+            console.log(cell.split("-"));
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" name="cellphone" id="cellphone">
+    <input onclick="splitPhoneNumber()" type="button" value="입력" id="button">
+
+    
+</body>
+</html>
