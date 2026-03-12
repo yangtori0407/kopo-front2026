@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 1000px;
+            background-color: rgb(228, 84, 84);
+            border-radius: 3%;
+            position: relative;
+        }
+        .box{
+            width: 700px;
+            height: 900px;
+            background-color: white;
+            position: absolute;
+            left: 6%;
+            top: 5%;
+            border-radius: 3%;
+            display: flex;
+            flex-direction: column;
+        }
+        .img{
+            width: 100%;
+            height: 30%;
+            /* background-color: maroon; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #lottoImg{
+            width: 50%;
+            height: 100%;
+
+        }
+        #lottoImg>img{
+            width: 70%;
+            height: 80%;
+            object-fit: fill;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #title{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .button{
+            width: 100%;
+            height: 10%;
+            /* background-color: mediumpurple; */
+        }
+        #go{
+            width: 90%;
+            height: 70%;
+            /* border-radius: 5%; */
+            background-color: darkseagreen;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+        .numbers{
+            width: 100%;
+            height: 60%;
+            background-color: darkslategray;
+        }
+        .number{
+            width: 20%;
+            height: 3%;
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <div id="lottoImg">
+                    <img src="lotto.png" alt="">
+                </div>
+                <div id="title">
+                    <span>로또</span>
+                    <span>추첨기</span>
+                </div>
+            </div>
+            <div class="button">
+                <button id="go">추첨하기</button>
+            </div>
+            <div class="numbers">
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
