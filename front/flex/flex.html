@@ -9,6 +9,8 @@
             background-color: gainsboro;
             width: 700px;
             height: 500px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .wrap>div>div {
@@ -30,6 +32,15 @@
 
         .yellow {
             background-color: #fad84a;
+        }
+
+        .left-side, .center, .right-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .right-side{
+            flex-direction: column-reverse;
         }
     </style>
 </head>
