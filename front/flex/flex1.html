@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="reset.css" />
     <style>
       .container {
-        width: 1280px;
-        height: 80px;
-        background-color: rgb(225, 240, 235);
+        width: 1200px;
+        height: 86px;
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        /* border: 1px solid rgb(177, 177, 177); */
         /* gap: 2px; */
         /* flex-wrap: wrap; */
       }
       .item1 {
-        width: 200px;
-        height: 70px;
-        background-color: rgb(196, 53, 53);
+        width: 7%;
+        height: 100%;
+        /* background-color: rgb(86, 67, 255); */
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -28,14 +29,66 @@
         color: white;
       }
       .item2 {
-        width: 500px;
-        height: 70px;
-        background-color: rgb(184, 161, 240);
+        width: 93%;
+        height: 100%;
+        /* background-color: rgb(253, 38, 38); */
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        gap: 5px;
+        color: white;
+      }
+      .item2_1{
+        width: 65%;
+        height: 100%;
+        /* background-color: sienna; */
+        display: flex;
+        font-size: 19px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(146, 146, 146);
+        font-weight: bold;
+      }
+      .item2_2{
+        width: 5%;
+        height: 100%;
+        /* background-color: rgb(221, 52, 236); */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .item2_3{
+        width: 30%;
+        height: 100%;
+        /* background-color: rgb(255, 98, 163); */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 15px;
+        color: rgb(143, 143, 143);
+      }
+      #circle{
+        width: 60%;
+        height: 60%;;
+        border: 1px solid rgb(175, 175, 175);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        box-sizing: border-box;
+      }
+      #circle_small{
+        width: 50%;
+        height: 32%;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 20px;
+        background-color: rgb(201, 201, 201);
+        color: rgb(109, 109, 109);
+        font-weight: bold;
       }
       .sub-item {
         width: 100px;
@@ -48,13 +101,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="item1">코포은행</div>
-      <div class="item2">
-        <div class="sub-item">Home</div>
-        <div class="sub-item">Product</div>
-        <div class="sub-item">Q&A</div>
-        <div class="sub-item">contact</div>
+        <div class="item1">
+          <div id="circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="none" aria-hidden="true" viewBox="0 0 16 16" stroke="black"><g stroke="current" stroke-linecap="round" clip-path="url(#ico_menu_svg__a)"><path d="M2.667 3.333h10.667M2.667 8h10.667M2.667 12.667h10.667"></path></g><defs><clipPath id="ico_menu_svg__a"><path fill="#fff" d="M0 0h16v16H0z"></path></clipPath></defs></svg>
+          </div>
+        </div>
+        <div class="item2">
+          <div class="item2_1">
+            <div style="color: green;">트랜드+</div>
+            <div style="color: green;">새학기혜택</div>
+            <div>베스트</div>
+            <div>신상품</div>
+            <div style="color: green;">이벤트</div>
+            <div>바로펀딩</div>
+            <div>PICKS</div>
+            <div>CASTing</div>
+            <div>컬처라운지</div>
+          </div>
+          <div class="item2_2">
+            <div id="circle_small">+</div>
+          </div>
+          <div class="item2_3">
+            <div>오늘의 미션</div>
+            <div>할인 혜택</div>
+            <div>대학생&취준생</div>
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>
