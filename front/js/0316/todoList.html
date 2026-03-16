@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="input" placeholder="할 일을 입력하세요" id="todo">
+    <button id="add"> 추가하기 </button>
+    <button id="clear">모두 지우기</button>
+
+    <div>
+        <ul id = "todoList">
+
+        </ul>
+    </div>
+
+    <script>
+        const list = document.getElementById("todoList");
+        const add = document.getElementById("add");
+        const clear = document.getElementById("clear");
+        const todo = document.getElementById("todo");
+        
+        let count = 0;
+        add.addEventListener("click", () => {
+            
+            const li = document.createElement("li");
+            li.innerText = todo.value;
+
+            list.appendChild(li);
+
+            localStorage.setItem(`todo${count}`, todo.value);
+
+            todo.value = "";
+
+            count++;
+            
+        })
+
+        clear.addEventListener("click", () => {
+            list.innerHTML = "";
+        })
+    </script>
+</body>
+</html>
