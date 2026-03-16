@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>리스트 시작
+            <ol id="ol-id">
+                <li id="first">1</li>
+                <li id="second">2</li>
+                <li id="third">3</li>
+            </ol>
+        </h1>
+    </div>
+
+    <script>
+        const ol = document.getElementById("ol-id");
+        let li = document.createElement("li");
+        li.innerText = "appenChild"
+        ol.appendChild(li);
+
+        li = document.createElement("li");
+        const first = document.getElementById("second");
+        li.innerText = "insertBefore";
+        ol.insertBefore(li, first);
+    </script>
+</body>
+</html>

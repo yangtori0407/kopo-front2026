@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="article">
+        <li id="article1">게시글</li>
+        <li id="article2">게시글</li>
+        <li id="article3">게시글</li>
+        <li id="article4">게시글</li>
+        <li id="article5">게시글</li>
+    </ul>
+    <script>
+        const articleList = document.getElementById("article");
+        articleList.addEventListener("click", (ev) => {
+            console.log(ev.target.id);
+        });
+    </script>
+</body>
+</html>

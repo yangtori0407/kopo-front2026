@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div-id">DIV 요소(id)</div>
+    <div class="div-class">DIV 요소(class)</div>
+    <button onclick="removeDivId()">클릭</button>
+    <script>
+        const elemList = document.getElementsByTagName("div");
+        console.log(elemList);
+        function removeDivId(){
+            const elem = document.getElementById("div-id");
+            elem.remove(elem);
+            console.log('remove Div-id');
+            console.log(elemList);
+        }
+    </script>
+</body>
+</html>

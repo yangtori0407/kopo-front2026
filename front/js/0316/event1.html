@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="addDiv(event)" id="button-id">클릭</button>
+    <button  id="button-id2">클릭</button>
+    <div id="div-id">클릭</div>
+
+    <div id="div-id1"><div>클릭</div></div>
+    <script>
+        function addDiv(event){
+            console.log(event);
+        }
+        document.getElementById("button-id2").onclick = (event) => {
+            console.log(event);
+            console.log(event.target);
+        }
+
+        const div = document.getElementById('div-id');
+        
+        div.addEventListener('click', (event) => {
+            console.log('div 클릭');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.currentTarget);
+        })
+
+        const div1 = document.getElementById('div-id1');
+        
+        div1.addEventListener('click', (event) => {
+            console.log('div 클릭');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.currentTarget);
+        })
+    </script>
+</body>
+</html>

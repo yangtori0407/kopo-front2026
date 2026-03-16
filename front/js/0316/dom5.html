@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div-id">
+        DIV 요소
+    </div>
+    <div id="div-id2">
+        DIV 요소
+    </div>
+    <button onClick="addDiv()" id="button-id">클릭</button>
+
+    <script>
+        function addDiv(){
+            const divElem = document.getElementById('div-id');
+            divElem.insertAdjacentHTML('afterend', '<span>Hello</span>')
+        }
+
+    </script>
+</body>
+</html>

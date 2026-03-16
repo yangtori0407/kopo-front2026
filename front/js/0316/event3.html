@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <input type="button" class="btn_clear" value="clear">
+    <div class="result"></div>
+
+    <script>
+        const div = document.querySelector(".box");
+        const btnClear = document.querySelector(".btn_clear");
+        const result = document.querySelector(".result");
+
+        div.addEventListener("click", (event) => {
+            result.innerHTML += "<div>Click</div>"
+        });
+
+        div.addEventListener("mousedown", (event) => {
+            result.innerHTML += "<div>mousedown</div>"
+        })
+
+        div.addEventListener("mouseup", (event) => {
+            result.innerHTML += "<div>mouseup</div>";
+        })
+        btnClear.addEventListener("click", (event) => {
+            result.innerHTML = "";
+        })
+    </script>
+</body>
+</html>
